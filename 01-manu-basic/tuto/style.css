@@ -1,41 +1,50 @@
-:root {
-  --color: #ececec;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-* {
+body {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-nav {
-  display: grid;
-  grid-template-columns: auto 2fr 2fr;
-  background-color: #242323;
-  color: var(--color);
+a {
+  text-decoration: none;
+  color: #f5f5f5;
 }
 
-nav h2 {
+header {
+  background-color: #000;
+  display: flex;
+  min-height: 70px; /* Sirve para poner un minimo */
+  justify-content: space-between;
+  align-items: center; /* Para que se separen los elementos */
+  padding: 0 10px;
+}
+
+.logo {
   display: flex;
   align-items: center;
-  justify-content: start;
-  font-size: 2.5rem;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  font-size: 3rem;
+.logo img {
+  height: 50px;
+  margin-right: 12px;
 }
 
-nav ul li a {
-  text-decoration: none; /* quita el subrayado */
-  color: inherit; /* hereda el color del texto del elemento padre */
-  margin-right: 0.5rem;
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: #1a1a1a;
+}
+
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav{
+    padding: 10px 0;
+  }
+  
 }
