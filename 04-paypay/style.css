@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #bfbfbf;
+  --secondary-color: #404040;
+  --background-color: #0d0d0d;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  width: 30vw;
+  margin: 130px auto;
+  border-radius: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #919191;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.icon p {
+  width: 200px;
+  padding-left: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.buttons {
+  height: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.buttons button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    height: 20vh;
+    width: 90vw;
+    margin: 130px auto;
+  }
+}
