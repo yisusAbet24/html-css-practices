@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #bfbfbf;
+  --secondary-color: #404040;
+  --background-color: #0d0d0d;
+}
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  gap: 15px;
+}
+
+.bar input {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.bar input:focus {
+  outline: none;
+  border: 2px solid rgb(0, 11, 77);
+}
+
+.search {
+  display: flex;
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  transform: scale(1.5);
+  transition: all 0.2s ease-in-out;
+}
